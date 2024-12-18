@@ -1,4 +1,4 @@
-# Backup & Sync of .dotfiles
+# Backup & Sync of .dotfiles with git-trickery
 
 This rougly follows the descriptions:
  * <https://www.atlassian.com/git/tutorials/dotfiles>
@@ -7,7 +7,7 @@ This rougly follows the descriptions:
 ## Setup on a new System
 
 ```
-git clone --bare git@github.com:andizimmerer/.dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/andizimmerer/.dotfiles.git $HOME/.dotfiles
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 ./setup-dotfiles.sh
 ```
@@ -31,5 +31,5 @@ Pulling new changes should be as easy as
 ```
 dotfiles pull
 ```
-There might be conflicts. Maybe I should add a script that fixes these conflicts.
+There might be conflicts if a new file is added. Maybe I should add a script that fixes these conflicts automatically like on initial setup.
 
