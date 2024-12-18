@@ -8,7 +8,7 @@ This rougly follows the descriptions:
 
 ```
 git clone --bare git@github.com:andizimmerer/.dotfiles.git $HOME/.dotfiles
-git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' checkout setup
+git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout setup
 ./setup-dotfiles.sh
 ```
 

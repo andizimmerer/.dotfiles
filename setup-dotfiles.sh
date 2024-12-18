@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Hide files we are not explicitly tracking yet.
 dotfiles config --local status.showUntrackedFiles no
